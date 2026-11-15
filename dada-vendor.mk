@@ -167,7 +167,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/cameraopt.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_perf.json \
-    vendor/xiaomi/dada/proprietary/odm/etc/camera/cameraopt_reclaim.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reclaim.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/camerascene.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerascene.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/colorsensorfactor.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/colorsensorfactor.xml \
@@ -1182,6 +1181,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/MiSans-Regular.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSans-Regular.ttf \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/MiSansArabicVF.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSansArabicVF.ttf \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/MiSansTibetanVF.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSansTibetanVF.ttf \
+    vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/MiSansVF.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSansVF.ttf \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/Noto-COLRv1-emojicompat.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/Noto-COLRv1-emojicompat.ttf \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/Oxanium-Medium.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/Oxanium-Medium.ttf \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_film_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_film_logo.png \
@@ -1283,6 +1283,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_wuhan.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_wuhan.webp \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_zhang_jia_jie.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_zhang_jia_jie.webp \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/noise_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/noise_logo.png \
+    vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/oxanium_bold.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/oxanium_bold.ttf \
+    vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/oxanium_medium.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/oxanium_medium.ttf \
+    vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomi/watermark/oxanium_regular.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/oxanium_regular.ttf \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xiaomismartaeconfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomismartaeconfig.json \
     vendor/xiaomi/dada/proprietary/odm/etc/camera/xmi_slmt_4x_1080p.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/xmi_slmt_4x_1080p.dlc \
@@ -1739,21 +1742,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.sensormodule.qti_tpg2.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.qti_tpg2.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.sensorsocmap.socid_map.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensorsocmap.socid_map.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_ofilm_ov32b40_front_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_ofilm_ov32b40_front_ii.bin \
-    vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_ofilm_ov32b40_front_ii_cn.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_ofilm_ov32b40_front_ii_cn.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_ofilm_ovx9100_wide_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_ofilm_ovx9100_wide_i.bin \
-    vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_ofilm_ovx9100_wide_i_cn.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_ofilm_ovx9100_wide_i_cn.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_ofilm_s5kjn1_ultra_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_ofilm_s5kjn1_ultra_ii.bin \
-    vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_ofilm_s5kjn1_ultra_ii_cn.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_ofilm_s5kjn1_ultra_ii_cn.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_ofilm_s5kjn5_tele3x_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_ofilm_s5kjn5_tele3x_ii.bin \
-    vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_ofilm_s5kjn5_tele3x_ii_cn.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_ofilm_s5kjn5_tele3x_ii_cn.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_sunny_ov32b40_front_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_sunny_ov32b40_front_i.bin \
-    vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_sunny_ov32b40_front_i_cn.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_sunny_ov32b40_front_i_cn.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_sunny_ovx9100_wide_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_sunny_ovx9100_wide_ii.bin \
-    vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_sunny_ovx9100_wide_ii_cn.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_sunny_ovx9100_wide_ii_cn.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_sunny_s5kjn1_ultra_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_sunny_s5kjn1_ultra_i.bin \
-    vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_sunny_s5kjn1_ultra_i_cn.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_sunny_s5kjn1_ultra_i_cn.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_sunny_s5kjn5_tele3x_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_sunny_s5kjn5_tele3x_i.bin \
-    vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.dada_sunny_s5kjn5_tele3x_i_cn.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.dada_sunny_s5kjn5_tele3x_i_cn.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.default.sun.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.default.sun.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/com.qti.tuned.tpg.sun.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.tpg.sun.bin \
     vendor/xiaomi/dada/proprietary/odm/lib64/camera/fdconfigoffline.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigoffline.bin \
@@ -1788,6 +1783,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta \
     vendor/xiaomi/dada/proprietary/product/etc/displayconfig/display_id_4630946682710401939.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946682710401939.xml \
     vendor/xiaomi/dada/proprietary/product/etc/displayconfig/display_id_4630947212918452371.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630947212918452371.xml \
+    vendor/xiaomi/dada/proprietary/system_ext/etc/cameraopt_reclaim.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cameraopt_reclaim.json \
     vendor/xiaomi/dada/proprietary/vendor/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_perf.json \
     vendor/xiaomi/dada/proprietary/vendor/etc/camera/cameraopt_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_vendor.json \
     vendor/xiaomi/dada/proprietary/vendor/etc/hal_uuid_map_dada.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_dada.xml \
@@ -1811,7 +1807,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.metadata-V2-ndk_prebuilt \
     android.hardware.camera.provider-V2-ndk_prebuilt \
     android.hardware.graphics.common-V5-ndk_prebuilt \
-    libSEGModel \
     lib_android_keymaster_keymint_utils_prebuilt \
     libcameraobserver \
     libcameraopt \
@@ -1825,9 +1820,7 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages_prebuilt \
     libkeymaster_portable_prebuilt \
     libopencv_core \
-    libopencv_core_se \
     libopencv_imgproc \
-    libopencv_imgproc_se \
     libsi \
     libsoft_attestation_cert_prebuilt \
     libultrahdr_prebuilt \
@@ -1844,6 +1837,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hw.touchfeature-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     xiaomi.system.hypsys.common-V1-ndk \
+    libcamera_algoup_jni.xiaomi \
+    libcamera_mianode_jni.xiaomi \
+    libmicampostproc_client \
+    vendor.xiaomi.hardware.campostproc@1.0 \
     com.qti.actuator.dada_ofilm_ovx9100_ak7316_wide_i_actuator \
     com.qti.actuator.dada_ofilm_s5kjn5_gt9764v_tele3x_ii_actuator \
     com.qti.actuator.dada_sunny_ovx9100_ak7316_wide_ii_actuator \
@@ -2041,6 +2038,7 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.tsskinbeautifier \
     com.xiaomi.plugin.videofilter \
     com.xiaomi.plugin.watermark \
+    com.xiaomi.plugin.watermarkV2 \
     com.xiaomi.plugin.yuv2Heic \
     com.xiaomi.zsl.aihighlight \
     com.xiaomi.zsl.bokehrawhdr \
@@ -2058,6 +2056,7 @@ PRODUCT_PACKAGES += \
     com.xiaomi.zsl.single \
     com.xiaomi.zsl.sr \
     camx.device-impl \
+    camx.provider-impl \
     com.qti.camx.chiiqutils \
     com.qti.chifeaturecompatibility \
     com.qti.chiusecaseselector \
@@ -2262,17 +2261,21 @@ PRODUCT_PACKAGES += \
     libmialgo_aideban \
     libmialgo_aihighlight \
     libmialgo_ainr_ll \
+    libmialgo_aio_seg \
     libmialgo_aisn \
     libmialgo_aisn_common \
     libmialgo_aisp \
     libmialgo_bokeh_depth \
     libmialgo_cls \
+    libmialgo_depth \
+    libmialgo_ds_nn \
     libmialgo_ellc \
     libmialgo_ie_capture \
     libmialgo_sd \
     libmialgo_sdsr \
     libmialgo_snsc \
     libmialgo_utils \
+    libmialgoai_align_sr_shared \
     libmialgoengine \
     libmialgoengine_custom \
     libmicamGlobalPool \
@@ -2296,6 +2299,8 @@ PRODUCT_PACKAGES += \
     libmmcamera_bestats \
     libmmcamera_cac \
     libmmcamera_lscv35 \
+    libmmcamera_mfnr \
+    libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
     libmmfp \
     libmorpho_Depurple \
@@ -2308,6 +2313,7 @@ PRODUCT_PACKAGES += \
     libopencv \
     libopencv3a \
     libopestriping \
+    libpendant_wrapper \
     libportrait_repair_qnn \
     libpostprocinfo \
     libproj_qmot_tracker \

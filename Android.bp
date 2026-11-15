@@ -147,32 +147,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libSEGModel",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSEGModel.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libopencv_core_se",
-                "libopencv_imgproc_se",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib_android_keymaster_keymint_utils_prebuilt",
     owner: "xiaomi",
     strip: {
@@ -524,32 +498,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libopencv_core_se",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libopencv_core_se.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libm",
-                "liblog",
-                "libz",
-                "libc++_shared",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libopencv_imgproc",
     owner: "xiaomi",
     strip: {
@@ -565,31 +513,6 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "libc++",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libopencv_imgproc_se",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libopencv_imgproc_se.so",
-            ],
-            shared_libs: [
-                "libopencv_core_se",
-                "libdl",
-                "libm",
-                "libc++_shared",
                 "libc",
             ],
         },
@@ -834,6 +757,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcom.xiaomi.metadatautils",
+                "libcom.xiaomi.debug",
                 "libc++",
                 "libc",
                 "libm",
@@ -1041,6 +965,152 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_algoup_jni.xiaomi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libcamera_algoup_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libcutils",
+                "libgui",
+                "liblog",
+                "libutils",
+                "libvndksupport",
+                "libandroid",
+                "libandroid_runtime",
+                "libbase",
+                "libmedia_jni_utils",
+                "libnativehelper",
+                "libnativewindow",
+                "libui",
+                "android.hidl.token@1.0-utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_mianode_jni.xiaomi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libcamera_mianode_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libcutils",
+                "libgui",
+                "liblog",
+                "libutils",
+                "libvndksupport",
+                "libxml2",
+                "libandroid",
+                "libmedia_jni_utils",
+                "libui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmicampostproc_client",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmicampostproc_client.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libnativewindow",
+                "libEGL",
+                "libGLESv2",
+                "libfmq",
+                "libgui",
+                "libui",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libmedia_jni_utils",
+                "libnativehelper",
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.xiaomi.hardware.campostproc@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.campostproc@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.xiaomi.hardware.campostproc@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.camera.common@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -8595,6 +8665,51 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.xiaomi.plugin.watermarkV2",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.watermarkV2.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamera_metadata",
+                "libcom.xiaomi.pluginutils",
+                "libcom.xiaomi.metadatautils",
+                "libcom.xiaomi.debug",
+                "libnativewindow",
+                "libui-v34",
+                "libEGL",
+                "libGLESv3",
+                "libpendant_wrapper",
+                "libcom.xiaomi.ionutils",
+                "libjpeg",
+                "libyuv",
+                "libpng",
+                "libz",
+                "libpiex",
+                "libexpat",
+                "libminikin.xiaomi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/plugins",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.xiaomi.plugin.yuv2Heic",
     owner: "xiaomi",
     strip: {
@@ -9138,6 +9253,48 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libui-v34",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "camx.provider-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camx.provider-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "liblog",
+                "libminksocket_vendor",
+                "libutils",
+                "android.hardware.camera.device-V2-ndk_prebuilt",
+                "android.hardware.camera.metadata-V2-ndk_prebuilt",
+                "android.hardware.camera.provider-V2-ndk_prebuilt",
+                "android.hardware.camera.common-V1-ndk_prebuilt",
+                "camx.device-impl",
+                "libcamera_metadata",
+                "libexif",
+                "libgralloctypes",
+                "libhardware",
+                "libhidlbase",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -16485,6 +16642,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmialgo_aio_seg",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmialgo_aio_seg.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libmialgo_ai_vision",
+                "libmialgo_utils",
+                "libcdsprpc",
+                "libOpenCL",
+                "libm",
+                "libc++_shared",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmialgo_aisn",
     owner: "xiaomi",
     strip: {
@@ -16613,6 +16799,65 @@ cc_prebuilt_library_shared {
                 "libOpenCL",
                 "libm",
                 "libc++_shared",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmialgo_depth",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmialgo_depth.so",
+            ],
+            shared_libs: [
+                "libOpenCL",
+                "libcdsprpc",
+                "libmialgo_ai_vision",
+                "libc++_shared",
+                "libm",
+                "liblog",
+                "libz",
+                "libc",
+                "libGLESv3",
+                "libEGL",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmialgo_ds_nn",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmialgo_ds_nn.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libOpenCL",
+                "libcdsprpc",
+                "libSNPE",
+                "libmialgo_utils",
+                "libm",
                 "libdl",
                 "libc",
             ],
@@ -16801,6 +17046,32 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libc++_shared",
                 "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmialgoai_align_sr_shared",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmialgoai_align_sr_shared.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libm",
+                "libc++_shared",
                 "libdl",
                 "libc",
             ],
@@ -17669,6 +17940,88 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmcamera_mfnr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmmcamera_mfnr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libutils",
+                "libcamxcoreutils",
+                "libcommonchiutils",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamera_metadata",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libopencv",
+                "libz",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_mfnr_t4",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmmcamera_mfnr_t4.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libutils",
+                "libcamxcoreutils",
+                "libcommonchiutils",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamera_metadata",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libopencv",
+                "libz",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmcamera_pdpc",
     owner: "xiaomi",
     strip: {
@@ -18017,6 +18370,36 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpendant_wrapper",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpendant_wrapper.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libMiPhotoFilter",
+                "libEGL",
+                "libGLESv3",
+                "libdl",
+                "libm",
+                "libz",
+                "libnativewindow",
+                "libvulkan",
+                "libc",
             ],
         },
     },
@@ -19921,6 +20304,7 @@ cc_prebuilt_binary {
                 "android.frameworks.sensorservice-V1-ndk",
                 "android.hardware.sensors-V3-ndk",
                 "libhidlbase",
+                "libstagefright_foundation",
                 "libc++",
                 "libc",
                 "libm",
