@@ -1,0 +1,9 @@
+android_app_import {
+    name: "com.qualcomm.qti.gpudrivers.sun.api35",
+    apk: "AdrenoGraphicsDriver.apk",
+    default_dev_cert: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
